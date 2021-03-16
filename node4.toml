@@ -1,0 +1,22 @@
+[parity]
+chain = "demo-spec_poa.json"
+base_path = "parity4"
+[network]
+port = 30304
+reserved_peers = "bootnodes.txt"
+[rpc]
+port = 8544
+apis = ["all"]
+interface = "0.0.0.0"
+cors = ["all"]
+hosts = ["all"]
+[websockets]
+port = 8454
+[ipc]
+disable = true
+[account]
+password = ["node.pwds"]
+[mining]
+engine_signer = "0xde25177bbb6a44e196855c15c5f27ae69b437c9b"
+reseal_on_txs = "none"
+force_sealing = true
